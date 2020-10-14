@@ -60,7 +60,6 @@
             this.tbQuantity.Name = "tbQuantity";
             this.tbQuantity.Size = new System.Drawing.Size(100, 20);
             this.tbQuantity.TabIndex = 0;
-            this.tbQuantity.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -179,7 +178,6 @@
             this.rbAmarr.TabStop = true;
             this.rbAmarr.Text = "Amarr";
             this.rbAmarr.UseVisualStyleBackColor = true;
-            this.rbAmarr.CheckedChanged += new System.EventHandler(this.rbAmarr_CheckedChanged);
             // 
             // rbRens
             // 
@@ -213,7 +211,6 @@
             this.rbJita.TabStop = true;
             this.rbJita.Text = "Jita";
             this.rbJita.UseVisualStyleBackColor = true;
-            this.rbJita.CheckedChanged += new System.EventHandler(this.rbJita_CheckedChanged);
             // 
             // tbJita
             // 
@@ -221,7 +218,6 @@
             this.tbJita.Name = "tbJita";
             this.tbJita.Size = new System.Drawing.Size(44, 20);
             this.tbJita.TabIndex = 4;
-            this.tbJita.TextChanged += new System.EventHandler(this.tbJita_TextChanged);
             // 
             // tbAmarr
             // 
