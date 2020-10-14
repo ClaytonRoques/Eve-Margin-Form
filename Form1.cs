@@ -21,6 +21,15 @@ namespace Eve_Margin_Form
             tbHek.Text = Properties.Settings.Default.hekBroker.ToString();
             tbDefault.Text = Properties.Settings.Default.defaultBroker.ToString();
         }
+        
+        private void tbJita_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         private void submit_Click(object sender, EventArgs e)
         {
             long buyPrice;
@@ -76,6 +85,17 @@ namespace Eve_Margin_Form
             corpWallet = totalBuyPrice * escrowPercent;
             clearPrice = corpWallet / (buyDoubled / 2);
         }
+
+        private void rbJita_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void rbAmarr_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
         private void save_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.jitaBroker = double.Parse(tbJita.Text);
@@ -85,5 +105,6 @@ namespace Eve_Margin_Form
             Properties.Settings.Default.defaultBroker = double.Parse(tbDefault.Text);
             Properties.Settings.Default.Save();
         }
+        
     }
 }

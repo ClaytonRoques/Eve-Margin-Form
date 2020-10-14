@@ -52,8 +52,15 @@
             this.tbDefault = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // tbQuantity
+            // 
+            this.tbQuantity.Location = new System.Drawing.Point(64, 12);
+            this.tbQuantity.Name = "tbQuantity";
+            this.tbQuantity.Size = new System.Drawing.Size(100, 20);
+            this.tbQuantity.TabIndex = 0;
+            this.tbQuantity.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -162,10 +169,22 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Total broker fee:";
             // 
+            // rbAmarr
+            // 
+            this.rbAmarr.AutoSize = true;
+            this.rbAmarr.Location = new System.Drawing.Point(175, 38);
+            this.rbAmarr.Name = "rbAmarr";
+            this.rbAmarr.Size = new System.Drawing.Size(52, 17);
+            this.rbAmarr.TabIndex = 5;
+            this.rbAmarr.TabStop = true;
+            this.rbAmarr.Text = "Amarr";
+            this.rbAmarr.UseVisualStyleBackColor = true;
+            this.rbAmarr.CheckedChanged += new System.EventHandler(this.rbAmarr_CheckedChanged);
+            // 
             // rbRens
             // 
             this.rbRens.AutoSize = true;
-            this.rbRens.Location = new System.Drawing.Point(175, 83);
+            this.rbRens.Location = new System.Drawing.Point(175, 61);
             this.rbRens.Name = "rbRens";
             this.rbRens.Size = new System.Drawing.Size(50, 17);
             this.rbRens.TabIndex = 11;
@@ -176,7 +195,7 @@
             // rbHek
             // 
             this.rbHek.AutoSize = true;
-            this.rbHek.Location = new System.Drawing.Point(175, 106);
+            this.rbHek.Location = new System.Drawing.Point(175, 84);
             this.rbHek.Name = "rbHek";
             this.rbHek.Size = new System.Drawing.Size(45, 17);
             this.rbHek.TabIndex = 8;
@@ -184,30 +203,50 @@
             this.rbHek.Text = "Hek";
             this.rbHek.UseVisualStyleBackColor = true;
             // 
+            // rbJita
+            // 
+            this.rbJita.AutoSize = true;
+            this.rbJita.Location = new System.Drawing.Point(175, 15);
+            this.rbJita.Name = "rbJita";
+            this.rbJita.Size = new System.Drawing.Size(41, 17);
+            this.rbJita.TabIndex = 3;
+            this.rbJita.TabStop = true;
+            this.rbJita.Text = "Jita";
+            this.rbJita.UseVisualStyleBackColor = true;
+            this.rbJita.CheckedChanged += new System.EventHandler(this.rbJita_CheckedChanged);
+            // 
+            // tbJita
+            // 
+            this.tbJita.Location = new System.Drawing.Point(234, 12);
+            this.tbJita.Name = "tbJita";
+            this.tbJita.Size = new System.Drawing.Size(44, 20);
+            this.tbJita.TabIndex = 4;
+            this.tbJita.TextChanged += new System.EventHandler(this.tbJita_TextChanged);
+            // 
             // tbAmarr
             // 
-            this.tbAmarr.Location = new System.Drawing.Point(234, 57);
+            this.tbAmarr.Location = new System.Drawing.Point(234, 35);
             this.tbAmarr.Name = "tbAmarr";
             this.tbAmarr.Size = new System.Drawing.Size(45, 20);
             this.tbAmarr.TabIndex = 6;
             // 
             // tbHek
             // 
-            this.tbHek.Location = new System.Drawing.Point(234, 102);
+            this.tbHek.Location = new System.Drawing.Point(234, 80);
             this.tbHek.Name = "tbHek";
             this.tbHek.Size = new System.Drawing.Size(44, 20);
             this.tbHek.TabIndex = 10;
             // 
             // tbRens
             // 
-            this.tbRens.Location = new System.Drawing.Point(234, 80);
+            this.tbRens.Location = new System.Drawing.Point(234, 58);
             this.tbRens.Name = "tbRens";
             this.tbRens.Size = new System.Drawing.Size(45, 20);
             this.tbRens.TabIndex = 8;
             // 
             // tbDefault
             // 
-            this.tbDefault.Location = new System.Drawing.Point(234, 128);
+            this.tbDefault.Location = new System.Drawing.Point(234, 106);
             this.tbDefault.Name = "tbDefault";
             this.tbDefault.Size = new System.Drawing.Size(44, 20);
             this.tbDefault.TabIndex = 11;
@@ -215,7 +254,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(175, 131);
+            this.label7.Location = new System.Drawing.Point(175, 109);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 24;
@@ -223,7 +262,7 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(234, 154);
+            this.save.Location = new System.Drawing.Point(234, 132);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(44, 23);
             this.save.TabIndex = 12;
@@ -235,8 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 190);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(609, 157);
             this.Controls.Add(this.save);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbDefault);
@@ -294,7 +332,6 @@
         private System.Windows.Forms.TextBox tbDefault;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Label label8;
     }
 }
 
